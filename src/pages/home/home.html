@@ -1,14 +1,46 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
-</ion-header>
+<ion-content padding class="homeBg">
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+  <img src="../../assets/imgs/fhlogo.png" width="100" height="100" class="imglogocenter">
+  <div style="font-family: 'Lobster', cursive; top: 24%; font-size: 40px;" class="imglogocenter">FitHelp</div>
+  <ion-card class="centralize" style="opacity: 0.7">
+      <ion-card-content>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+        <ion-list>
+            <ion-item>
+              <ion-label floating>Usuário</ion-label>
+              <ion-input type="text"></ion-input>
+            </ion-item>
+          
+            <ion-item>
+            <ion-label floating>Senha</ion-label>
+            <ion-input type="password"></ion-input>
+          </ion-item>
+        </ion-list>
+
+        <br>
+        <button ion-button block class="gradient">
+          Entrar
+        </button>
+
+        <div text-center>Esqueceu suas credenciais? <a>Clique aqui!</a></div>
+        <br>
+
+        <button ion-button block class="gradient">
+          Cadastrar
+        </button>
+
+        <br>
+        <div text-center>Ou entrar usando...</div>
+        <br>
+
+        <button ion-button style="background-color: #dd4b39; width: 45%;">
+          Gmail
+        </button>
+        <button ion-button float-right style="background-color: #3b5998; width: 45%;">
+          Facebook
+        </button>
+        
+      </ion-card-content>
+  </ion-card>
+
 </ion-content>

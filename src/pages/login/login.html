@@ -1,0 +1,30 @@
+<ion-content padding class="background">
+    <ion-card>
+      <ion-card-content>
+
+        <ion-list>
+          <ion-item>
+            <ion-input type="text" placeholder="Username"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-input type="password" placeholder="Password"></ion-input>
+          </ion-item>
+        </ion-list>
+        <br>
+        <button ion-button block icon-right class="gradient">
+          Entrar
+          <ion-icon name="arrow-round-forward" ></ion-icon>
+        </button>
+        <hr>
+        <button ion-button block icon-right class="gradient">
+          Cadastrar
+          <ion-icon name="arrow-round-up" ></ion-icon>
+        </button>
+        <button ion-fab>
+            <ion-icon name="pin"></ion-icon>
+        </button>
+        <button ng-mousedown="class='fb-down'" ng-mouseup="class='fb-up'" class="{{class}}"> <img src="../../assets/imgs/fblogo.png" alt="" title="" /> </button>
+      </ion-card-content>
+    </ion-card>
+
+</ion-content>
