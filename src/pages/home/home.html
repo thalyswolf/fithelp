@@ -1,46 +1,54 @@
-<ion-content padding class="homeBg">
-  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
-  <img src="../../assets/imgs/fhlogo.png" width="100" height="100" class="imglogocenter">
-  <div style="font-family: 'Lobster', cursive; top: 24%; font-size: 40px;" class="imglogocenter">FitHelp</div>
-  <ion-card class="centralize" style="opacity: 0.7">
-      <ion-card-content>
+<ion-content padding class="backgnd" style="font-family: 'Amatic SC', cursive;">
+<link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+<img src="../../assets/imgs/perfil/imgteste.jpg" class="imgperfilcenter">
+<div style="margin-top: 37%; font-size: 30px; text-align: center;">João Paulo da Silva</div>
 
-        <ion-list>
-            <ion-item>
-              <ion-label floating>Usuário</ion-label>
-              <ion-input type="text"></ion-input>
-            </ion-item>
-          
-            <ion-item>
-            <ion-label floating>Senha</ion-label>
-            <ion-input type="password"></ion-input>
-          </ion-item>
-        </ion-list>
-
-        <br>
-        <button ion-button block class="gradient">
-          Entrar
+<ion-menu [content]="content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>Menu</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list>
+        <button ion-item (click)="openPage(homePage)"><ion-icon name="md-list-box" float-right></ion-icon>
+          Ficha
         </button>
-
-        <div text-center>Esqueceu suas credenciais? <a>Clique aqui!</a></div>
-        <br>
-
-        <button ion-button block class="gradient">
-          Cadastrar
+        <button ion-item (click)="openPage(friendsPage)"><ion-icon name="trending-up" float-right></ion-icon>
+          Gráficos
         </button>
-
-        <br>
-        <div text-center>Ou entrar usando...</div>
-        <br>
-
-        <button ion-button style="background-color: #dd4b39; width: 45%;">
-          Gmail
+        <button ion-item (click)="openPage(eventsPage)"><ion-icon name="md-notifications" float-right></ion-icon>
+          Notificações
         </button>
-        <button ion-button float-right style="background-color: #3b5998; width: 45%;">
-          Facebook
+        <button ion-item (click)="closeMenu()"><ion-icon name="trending-up" float-right></ion-icon>
+          Close Menu
         </button>
-        
-      </ion-card-content>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+
+  <ion-nav id="nav" #content [root]="rootPage"></ion-nav>
+  
+  <ion-nav id="nav" [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>
+
+  <button></button>
+
+  <ion-card style="background-color: black; opacity: 0.7; color: white; margin-top: 10%;">
+    <ion-card-header style="color: white;">
+      Header
+    </ion-card-header>
+    <ion-card-content>
+      The British use the term "header", but the American term "head-shot" the English simply refuse to adopt.
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card style="background-color: black; opacity: 0.7; color: white; margin-top: 10%;">
+    <ion-card-header style="color: white;">
+      Header
+    </ion-card-header>
+    <ion-card-content>
+      The British use the term "header", but the American term "head-shot" the English simply refuse to adopt.
+    </ion-card-content>
   </ion-card>
 
 </ion-content>
