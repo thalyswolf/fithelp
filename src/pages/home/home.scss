@@ -1,33 +1,62 @@
 page-home {
-    .gradient {
-        background: linear-gradient(to right,  purple 0%, red 100%);
-    }
-    .imgperfilcenter {
-        position: absolute;
-        left: 50%;
-        top: 10%;
-        -webkit-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
+    
+    // .backgnd {
+    //     background-image:url('../../assets/imgs/background/backglogin.png');
+    //     background-repeat: no-repeat;
+    //     background-size: 100% 100%;
+    //     background-color: #45372E;
+    // }
+
+    .perfil{
+        border-style: solid;
+        border-width: 0px;
         border-radius: 100%;
+        width:100px;
+        height:100px;
+        top: 30%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        box-shadow: -6px 15px 81px 3px rgba(0,0,0,0.75);
+        position: absolute;
+    }
+
+    .name-perfil{
+        top: 50%;
+        left: 50%;
+        width: 80%;
+        transform: translate(-50%,-50%);
+        position: absolute;
+        font-size: 40px;
+        text-align: center;
+        color: white;
+    }
+
+    .bg{
+        background-image: url('../../assets/imgs/background/backghome.png');
+        height: 300px;
+        background-size: cover;
+        background-position: center center;
+    }
+    .main-cnt{
+        width: 100%;
+        height: 700px;
+        //padding:20px;
+    }
+    .dp{
+        border-radius: 50%;
         height: 100px;
         width: 100px;
-        border-color: black;
-        border-style: solid;
-        border-width: 1px;
+        z-index: 10;
+        margin-top:-70px;
+        position: relative;
+        left:50%;
+        margin-right:-50%;
+        transform: translate(-50%,-50%);
+        box-shadow: -6px 15px 81px 3px rgba(0,0,0,0.75);
     }
-    .backgnd {
-        background-image:url('../../assets/imgs/background/backglogin.png');
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
-        background-color: #45372E;
-    }
-    .centralizecards {
-        margin-top: 53%;
-    }
-    .daysbtn {
-        border-radius: 100%;
-        font-size: 30px;
-        margin: 10px;
-        width: 8%;
+    ion-list ion-item{
+        color:#4b0909;
+        background-color: #723e3e;
+        margin-bottom: 10px;
     }
 }

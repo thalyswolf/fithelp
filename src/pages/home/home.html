@@ -1,10 +1,47 @@
-<ion-content class="backgnd" style="font-family: 'Amatic SC', cursive;">
+<ion-content parallax style="font-family: 'Amatic SC', cursive;">
 <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
-<img src="../../assets/imgs/perfil/imgteste.jpg" class="imgperfilcenter">
-<div style="margin-top: 30%; font-size: 30px; text-align: center;">João Paulo da Silva</div>
 
-  <div style="background-color: white; margin-top: 5%; width: 100%;">
+  <div class="bg">
+    <img src="../../assets/imgs/perfil/imgteste.jpg" class="perfil">
+    <p class="name-perfil">Nome Sob Imagem de Perfil</p><br>
+    <p class="name-perfil" style="font-size: 15px; top: 70%">Descrição do sujeito</p>
+  </div>
 
+  <div class="main-cnt">
+    <ion-list no-lines>
+      <ion-item>
+        <ion-grid>
+          <ion-row>
+            <ion-col col-2>
+              <div>
+                <button ion-button clear style="font-size: 25px; color: black; margin-left: -10px;">
+                  <ion-icon name="arrow-dropleft"></ion-icon>
+                </button>
+              </div>
+            </ion-col>
+            <ion-col col-8>
+              <div style="font-size:25px;" text-center>Segunda-feira, Primavera
+                <br><span style="font-size:20px;">10, outubro, 2019</span>
+              </div>
+            </ion-col>
+            <ion-col col-2>
+              <div>
+                <button ion-button clear style="font-size: 25px; color: black;">
+                  <ion-icon name="arrow-dropright"></ion-icon>
+                </button>
+              </div>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-item>
+      <hr>
+      <ion-item>
+
+      </ion-item>
+    </ion-list>
+  </div>
+
+  <div style="margin-top: 5%; width: 100%;">
     <ion-menu [content]="content">
       <ion-header>
         <ion-toolbar>
@@ -34,44 +71,8 @@
         </ion-list>
       </ion-content>
     </ion-menu>
-
     <ion-nav id="nav" #content [root]="rootPage"></ion-nav>
-    
     <ion-nav id="nav" [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>
-
-
-    <div style="background-color: #f1f1f1; height: 10%;">
-      <button ion-button clear><ion-icon name="ios-arrow-dropleft" float-left style="font-size:20px; margin-top: -10px;"></ion-icon></button>
-      <span style="font-size:20px; margin-top: 5px;" text-center>Segunda-feira</span>
-      <button ion-button clear><ion-icon name="ios-arrow-dropright" float-right style="font-size:20px; margin-top: -10px;"></ion-icon></button>
-    </div>
-
-    <!-- <div style="margin-top: 10%;">
-      <button class="daysbtn"> S </button>
-      <button class="daysbtn"> T </button>
-      <button class="daysbtn"> Q </button>
-      <button class="daysbtn"> Q </button>
-      <button class="daysbtn"> S </button>
-      <button class="daysbtn"> S </button>
-      <button class="daysbtn"> D </button>
-    </div> -->
-
-    <ion-card style="background-color: black; opacity: 0.7; color: white; margin-top: 10%;">
-      <ion-card-header style="color: white;">
-        Header
-      </ion-card-header>
-      <ion-card-content>
-        The British use the term "header", but the American term "head-shot" the English simply refuse to adopt.
-      </ion-card-content>
-    </ion-card>
-
-    <ion-card style="background-color: black; opacity: 0.7; color: white; margin-top: 10%;">
-      <ion-card-header style="color: white;">
-        Header
-      </ion-card-header>
-      <ion-card-content>
-        The British use the term "header", but the American term "head-shot" the English simply refuse to adopt.
-      </ion-card-content>
-    </ion-card>
   </div>
+
 </ion-content>
