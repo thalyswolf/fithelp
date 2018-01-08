@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { HomePage } from '../home/home';
+import { CadastroPage } from '../cadastro/cadastro';
+import { NewpassPage } from '../newpass/newpass';
 
 /**
  * Generated class for the LoginPage page.
@@ -26,6 +28,16 @@ export class LoginPage {
   onHome():void{
     this.navCtrl.push(HomePage,{
       nome:'Dougras'
+    });
+  }
+
+  onCadastro():void{
+    this.navCtrl.push(CadastroPage,{
+    });
+  }
+  
+  onNewpass():void{
+    this.navCtrl.push(NewpassPage,{
     });
   }
 }

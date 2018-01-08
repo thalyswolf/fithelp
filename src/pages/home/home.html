@@ -2,7 +2,7 @@
 <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
 
   <div class="bg">
-    <img src="../../assets/imgs/perfil/imgteste.jpg" class="perfil">
+    <img src="../../assets/imgs/perfil/batatao.jpg" class="perfil">
     <p class="name-perfil">Nome Sob Perfil</p><br>
     <p class="name-perfil" style="font-size: 15px; top: 75%">Descrição do sujeito</p>
   </div>
@@ -38,8 +38,7 @@
       </ion-item>
       <ion-item>
         <div text-center style="font-size: 40px;">
-
-
+          
         </div>
       </ion-item>
     </ion-list>
@@ -49,28 +48,33 @@
     <ion-menu [content]="content">
       <ion-header>
         <ion-toolbar>
-          <ion-title><div style="font-size: 30px;">Menu</div></ion-title>
+          <ion-title style="height: 210px;">
+            <img src="../../assets/imgs/perfil/batatao.jpg" class="perfil" style="top: 25%">
+            <p class="name-perfil-menu">Nome Sob Perfil</p><br>
+            <p class="name-perfil-menu" style="font-size: 15px; top: 75%">Descrição do sujeito</p>
+            <p class="name-perfil-menu" style="font-size: 15px; top: 85%">26 anos, 78Kg. Três treinos por semana.</p>
+          </ion-title>
         </ion-toolbar>
       </ion-header>
       <ion-content>
         <ion-list>
-          <button ion-item (click)="openPage(homePage)" style="font-size: 30px;"><ion-icon name="md-list-box" float-right></ion-icon>
-            Ficha
+          <button ion-item (click)="onFicha()" style="font-size: 20px;"><ion-icon name="md-list-box" float-right></ion-icon>
+            <span style="font-size: 30px;">Ficha</span>
           </button>
-          <button ion-item (click)="openPage(friendsPage)" style="font-size: 30px;"><ion-icon name="md-trending-up" float-right></ion-icon>
-            Gráficos
+          <button ion-item (click)="onGraphs()" style="font-size: 20px;"><ion-icon name="md-trending-up" float-right></ion-icon>
+            <span style="font-size: 30px;">Gráficos</span>
           </button>
-          <button ion-item (click)="openPage(eventsPage)" style="font-size: 30px;"><ion-icon name="md-clock" float-right></ion-icon>
-            Notificações
+          <button ion-item (click)="onNotific()" style="font-size: 20px;"><ion-icon name="md-clock" float-right></ion-icon>
+            <span style="font-size: 30px;">Notificações</span>
           </button>
-          <button ion-item (click)="openPage(eventsPage)" style="font-size: 30px;"><ion-icon name="md-search" float-right></ion-icon>
-            Buscar
+          <button ion-item (click)="onSearch()" style="font-size: 20px;"><ion-icon name="md-search" float-right></ion-icon>
+            <span style="font-size: 30px;">Buscar</span>
           </button>
-          <button ion-item (click)="openPage(eventsPage)" style="font-size: 30px;"><ion-icon name="md-send" float-right></ion-icon>
-            Indicar
+          <button ion-item (click)="onIndic()" style="font-size: 20px;"><ion-icon name="md-send" float-right></ion-icon>
+            <span style="font-size: 30px;">Indicar</span>
           </button>
-          <button ion-item (click)="openPage(eventsPage)" style="font-size: 30px;"><ion-icon name="md-settings" float-right></ion-icon>
-            Preferências
+          <button ion-item (click)="openPage(eventsPage)" style="font-size: 20px;"><ion-icon name="md-settings" float-right></ion-icon>
+            <span style="font-size: 30px;">Preferências</span>
           </button>
         </ion-list>
       </ion-content>

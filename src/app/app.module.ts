@@ -6,7 +6,14 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
+import { CadastroPage } from '../pages/cadastro/cadastro';
 import { LoginPage } from '../pages/login/login';
+import { NewpassPage } from '../pages/newpass/newpass';
+import { FichaPage } from '../pages/ficha/ficha';
+import { GraphsPage } from '../pages/graphs/graphs';
+import { NotificPage } from '../pages/notific/notific';
+import { SearchPage } from '../pages/search/search';
+import { IndicPage } from '../pages/indic/indic';
 import { ParallaxDirective } from '../directives/parallax/parallax'
 
 @NgModule({
@@ -14,6 +21,13 @@ import { ParallaxDirective } from '../directives/parallax/parallax'
     MyApp,
     HomePage,
     LoginPage,
+    CadastroPage,
+    NewpassPage,
+    FichaPage,
+    GraphsPage,
+    NotificPage,
+    SearchPage,
+    Indic,
     ParallaxDirective
   ],
   imports: [
@@ -24,7 +38,14 @@ import { ParallaxDirective } from '../directives/parallax/parallax'
   entryComponents: [
     MyApp,
     HomePage,
-    LoginPage
+    LoginPage,
+    CadastroPage,
+    NewpassPage,
+    FichaPage,
+    GraphsPage,
+    NotificPage,
+    SearchPage,
+    Indic
   ],
   providers: [
     StatusBar,
