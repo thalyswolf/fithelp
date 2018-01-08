@@ -14,6 +14,7 @@ import { GraphsPage } from '../pages/graphs/graphs';
 import { NotificPage } from '../pages/notific/notific';
 import { SearchPage } from '../pages/search/search';
 import { IndicPage } from '../pages/indic/indic';
+import { ConfigsPage } from '../pages/configs/configs';
 import { ParallaxDirective } from '../directives/parallax/parallax'
 
 @NgModule({
@@ -27,7 +28,8 @@ import { ParallaxDirective } from '../directives/parallax/parallax'
     GraphsPage,
     NotificPage,
     SearchPage,
-    Indic,
+    IndicPage,
+    ConfigsPage,
     ParallaxDirective
   ],
   imports: [
@@ -45,7 +47,8 @@ import { ParallaxDirective } from '../directives/parallax/parallax'
     GraphsPage,
     NotificPage,
     SearchPage,
-    Indic
+    IndicPage,
+    ConfigsPage
   ],
   providers: [
     StatusBar,

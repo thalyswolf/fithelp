@@ -5,6 +5,7 @@ import { GraphsPage } from '../graphs/graphs';
 import { NotificPage } from '../notific/notific';
 import { SearchPage } from '../search/search';
 import { IndicPage } from '../indic/indic';
+import { ConfigsPage } from '../configs/configs';
 
 @Component({
   selector: 'page-home',
@@ -34,6 +35,10 @@ export class HomePage {
   }
   onIndic():void{
     this.navCtrl.push(IndicPage,{
+    });
+  }
+  onConfigs():void{
+    this.navCtrl.push(ConfigsPage,{
     });
   }
 }

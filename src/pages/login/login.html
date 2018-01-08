@@ -4,18 +4,23 @@
   <div style="font-family: 'Lobster', cursive; top: 24%; font-size: 40px;" class="imglogocenter">FitHelp</div>
   <ion-card class="centralize" style="opacity: 0.7">
     <ion-card-content>
-  
-      <ion-list>
-        <ion-item>
-          <ion-label floating>Usuário</ion-label>
-          <ion-input type="text"></ion-input>
-        </ion-item>
-            
-        <ion-item>
-          <ion-label floating>Senha</ion-label>
-          <ion-input type="password"></ion-input>
-        </ion-item>
-      </ion-list>
+      
+      <ion-grid>
+        <ion-list>
+          <ion-row>
+            <ion-item>
+              <ion-label floating>Usuário</ion-label>
+              <ion-input type="text"></ion-input>
+            </ion-item>
+          </ion-row>
+          <ion-row>
+            <ion-item>
+              <ion-label floating>Senha</ion-label>
+              <ion-input type="password"></ion-input>
+            </ion-item>
+          </ion-row>
+        </ion-list>
+      </ion-grid>
   
       <br>
       <button ion-button block class="gradient" (click)="onHome()">

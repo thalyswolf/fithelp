@@ -1,7 +1,6 @@
 page-login {
     .gradient {
         background: linear-gradient(to right,  purple 0%, red 100%);
-        opacity: 1;
     }
     .imglogocenter {
         position: absolute;
@@ -14,7 +13,7 @@ page-login {
         background-image:url('../../assets/imgs/background/backglogin.png');
         background-repeat: no-repeat;
         background-size: 100% 100%;
-        background-color: #45372E;
+        position: fixed;
     }
     .centralize {
         margin-top: 53%;

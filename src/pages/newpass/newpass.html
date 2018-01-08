@@ -1,18 +1,26 @@
-<!--
-  Generated template for the NewpassPage page.
+<ion-content padding class="backgnd">
+<link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+    
 
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
-<ion-header>
-
-  <ion-navbar>
-    <ion-title>newpass</ion-title>
-  </ion-navbar>
-
-</ion-header>
-
-
-<ion-content padding>
+  <ion-card class="center" style="opacity: 0.7">
+    <ion-card-content>
+      <div style="font-family: 'Amatic SC', cursive; text-align: center; font-size: 40px;">Recuperar Senha</div>
+      <ion-list>
+        <ion-item>
+          <ion-label floating>Usuário ou email</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+      </ion-list>
+  
+      <br>
+      <button ion-button block class="gradient" (click)="onHome()">
+        Enviar email
+      </button>
+  
+      <div text-center>Um email será enviado com os procedimentos que deverão ser realizados 
+        para recuperar a sua senha. Caso não se lembre do usuário ou do email, entre em contato 
+        com a nossa equipe.</div>
+    </ion-card-content>
+  </ion-card>  
 
 </ion-content>

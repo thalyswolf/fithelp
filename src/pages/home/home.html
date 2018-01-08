@@ -20,11 +20,9 @@
               </div>
             </ion-col>
                 <ion-col col-8>
-
                   <div style="font-size:25px;" text-center>Segunda-feira, Primavera
                     <br><span style="font-size:15px;">10 de outubro, 2019</span>
                   </div>
-
                 </ion-col>
             <ion-col col-2>
               <div>
@@ -43,6 +41,8 @@
       </ion-item>
     </ion-list>
   </div>
+
+  
 
   <div style="margin-top: 5%; width: 100%;">
     <ion-menu [content]="content">
@@ -73,7 +73,7 @@
           <button ion-item (click)="onIndic()" style="font-size: 20px;"><ion-icon name="md-send" float-right></ion-icon>
             <span style="font-size: 30px;">Indicar</span>
           </button>
-          <button ion-item (click)="openPage(eventsPage)" style="font-size: 20px;"><ion-icon name="md-settings" float-right></ion-icon>
+          <button ion-item (click)="onConfigs()" style="font-size: 20px;"><ion-icon name="md-settings" float-right></ion-icon>
             <span style="font-size: 30px;">Preferências</span>
           </button>
         </ion-list>
