@@ -3,19 +3,18 @@ page-login {
         background: linear-gradient(to right,  purple 0%, red 100%);
     }
     .imglogocenter {
-        position: absolute;
-        left: 50%;
-        top: 12%;
-        -webkit-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
+        height:100px;
+        width:100px;
+        margin-right:auto;
+        margin-left:auto;
+        margin-top:30px;
+        margin-bottom: 10px; 
     }
     .backgnd {
-        background-image:url('../../assets/imgs/background/backglogin.png');
+        background-image:url('./../assets/imgs/background/backglogin.png');
         background-repeat: no-repeat;
         background-size: 100% 100%;
         position: fixed;
     }
-    .centralize {
-        margin-top: 53%;
-    }
+
 }

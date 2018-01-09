@@ -16,6 +16,8 @@ import { SearchPage } from '../pages/search/search';
 import { IndicPage } from '../pages/indic/indic';
 import { ConfigsPage } from '../pages/configs/configs';
 import { ParallaxDirective } from '../directives/parallax/parallax'
+import { UserProvider } from '../providers/user/user.service';
+import { HttpModule } from "@angular/http";
 
 @NgModule({
   declarations: [
@@ -34,7 +36,8 @@ import { ParallaxDirective } from '../directives/parallax/parallax'
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    HttpModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -53,7 +56,8 @@ import { ParallaxDirective } from '../directives/parallax/parallax'
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    UserProvider
   ]
 })
 export class AppModule {}
