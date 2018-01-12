@@ -60,7 +60,7 @@ export class MyApp {
   }
     
   onPage(page):void{
-    this.nav.push(FichaPage);
+    this.nav.push(page.component);
   }
 }
 
