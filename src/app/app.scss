@@ -14,3 +14,65 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+    .perfil{
+        border-style: solid;
+        border-width: 0px;
+        border-radius: 100%;
+        width:100px;
+        height:100px;
+        z-index: 10;
+        margin-top:70px;
+        position: relative;
+        left:50%;
+        margin-right:-50%;
+        transform: translate(-50%,-50%);
+        box-shadow: -6px 15px 81px 3px rgba(0,0,0,0.75);
+    }
+
+    .name-perfil{
+        margin-top:-25px;
+        position: relative;
+        left:50%;
+        margin-right:-50%;
+        transform: translate(-50%,-50%);
+        font-size: 40px;
+        text-align: center;
+        color: white;
+    }
+
+    
+
+    .bg{
+        background-image: url('../../assets/imgs/background/backghome.png');
+        height: 230px;
+        background-size: cover;
+        background-position: center center;
+        margin-top: -10px;
+    }
+    .main-cnt{
+        width: 100%;
+        height: 700px;
+    }
+    .dp{
+        border-radius: 50%;
+        height: 100px;
+        width: 100px;
+        z-index: 10;
+        margin-top:-70px;
+        position: relative;
+        left:50%;
+        margin-right:-50%;
+        transform: translate(-50%,-50%);
+        box-shadow: -6px 15px 81px 3px rgba(0,0,0,0.75);
+    }
+    ion-list ion-item{
+        color:#4b0909;
+        background-color: #723e3e;
+        margin-bottom: 10px;
+    }
+    .gradient {
+        background: linear-gradient(to right,  purple 0%, red 100%);
+        height: 100px;
+        width: 90%;
+        font-size: 25px;
+    }

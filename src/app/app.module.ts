@@ -1,3 +1,4 @@
+import { MenuComponent } from './../components/menu/menu';
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
@@ -32,7 +33,8 @@ import { HttpModule } from "@angular/http";
     SearchPage,
     IndicPage,
     ConfigsPage,
-    ParallaxDirective
+    ParallaxDirective,
+    MenuComponent
   ],
   imports: [
     BrowserModule,
@@ -51,7 +53,8 @@ import { HttpModule } from "@angular/http";
     NotificPage,
     SearchPage,
     IndicPage,
-    ConfigsPage
+    ConfigsPage,
+    MenuComponent
   ],
   providers: [
     StatusBar,

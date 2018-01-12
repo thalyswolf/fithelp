@@ -45,40 +45,7 @@
   
 
   <div style="margin-top: 5%; width: 100%;">
-    <ion-menu [content]="content">
-      <ion-header>
-        <ion-toolbar>
-          <ion-title style="height: 210px;">
-            <img src="/assets/imgs/perfil/batatao.jpg" class="perfil" style="top: 30px;">
-            <p class="name-perfil-menu">Nome Sob Perfil</p><br>
-          </ion-title>
-        </ion-toolbar>
-      </ion-header>
-      <ion-content>
-        <ion-list>
-          <button ion-item (click)="onFicha()" style="font-size: 20px;"><ion-icon name="md-list-box" float-right></ion-icon>
-            <span style="font-size: 30px;">Ficha</span>
-          </button>
-          <button ion-item (click)="onGraphs()" style="font-size: 20px;"><ion-icon name="md-trending-up" float-right></ion-icon>
-            <span style="font-size: 30px;">Gráficos</span>
-          </button>
-          <button ion-item (click)="onNotific()" style="font-size: 20px;"><ion-icon name="md-clock" float-right></ion-icon>
-            <span style="font-size: 30px;">Notificações</span>
-          </button>
-          <button ion-item (click)="onSearch()" style="font-size: 20px;"><ion-icon name="md-search" float-right></ion-icon>
-            <span style="font-size: 30px;">Buscar</span>
-          </button>
-          <button ion-item (click)="onIndic()" style="font-size: 20px;"><ion-icon name="md-send" float-right></ion-icon>
-            <span style="font-size: 30px;">Indicar</span>
-          </button>
-          <button ion-item (click)="onConfigs()" style="font-size: 20px;"><ion-icon name="md-settings" float-right></ion-icon>
-            <span style="font-size: 30px;">Preferências</span>
-          </button>
-        </ion-list>
-      </ion-content>
-    </ion-menu>
-    <ion-nav id="nav" #content [root]="rootPage"></ion-nav>
-    <ion-nav id="nav" [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>
+    
   </div>
 
 </ion-content>
