@@ -36,7 +36,6 @@ export class LoginPage {
 
   onHome():void{
     this.navCtrl.push(HomePage,{
-      nome:'Dougras'
     });
   }
 

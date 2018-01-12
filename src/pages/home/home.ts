@@ -13,17 +13,17 @@ import { ConfigsPage } from '../configs/configs';
   templateUrl: 'home.html'
 })
 export class HomePage {
-  user:UserModel;
+  //user:UserModel;
   constructor(public navCtrl: NavController,
-              private nacParams:NavParams
+              // private nacParams:NavParams
               ) {
-    this.user = this.nacParams.get('user');
+    // this.user = this.nacParams.get('user');
   }
   //vou criar um método na API pra verificar se o usuário tá logado, ai quando implementar tu usar dentro desse método
-  ionViewCanEnter():boolean{
-  //se retornar false ele não permite que entre na page
-   return true;
-  }
+  // ionViewCanEnter():boolean{
+  // //se retornar false ele não permite que entre na page
+  //   return true;
+  // }
   onFicha():void{
     this.navCtrl.push(FichaPage,{
     });

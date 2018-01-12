@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { HomePage } from '../home/home';
 
 /**
  * Generated class for the NotificPage page.
@@ -20,6 +21,11 @@ export class NotificPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad NotificPage');
+  }
+
+  onHome():void{
+    this.navCtrl.push(HomePage,{
+    });
   }
 
 }
