@@ -9,6 +9,16 @@ import { NavController, NavParams } from 'ionic-angular';
 })
 export class HomePage {
   //user:UserModel;
+  segments:any = [{
+    icon:'body',
+    nav:''
+  },{
+    icon:'ios-add-outline',
+    nav:''
+  },{
+    icon:'ios-add-outline',
+    nav:''
+  }];
   constructor(public navCtrl: NavController,
               // private nacParams:NavParams
               ) {

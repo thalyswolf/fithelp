@@ -1,3 +1,5 @@
+
+
 <ion-content padding class="backgnd">
   <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
   <ion-avatar>
@@ -6,7 +8,6 @@
   <div style="font-family: 'Lobster', cursive; top: 24%; font-size: 40px;text-align:center;">FitHelp</div>
   <ion-card class="centralize" style="opacity: 0.7">
     <ion-card-content>
-      
       <ion-grid>
         <ion-list>
           <ion-row>
@@ -23,30 +24,32 @@
           </ion-row>
         </ion-list>
       </ion-grid>
-  
       <br>
-      <button ion-button block class="gradient" (click)="onLogin()">
+      <button ion-button block class="gradient-btn" (click)="onLogin()">
         Entrar
       </button>
-  
       <div text-center>Esqueceu suas credenciais? <a (click)="onNewpass()">Clique aqui!</a></div>
       <br>
-  
-      <button ion-button block class="gradient" (click)="onCadastro()">
+      <button ion-button block class="gradient-btn" (click)="onCadastro()">
         Cadastrar
-      </button>
-  
-      <br>
-      <div text-center>Ou entrar usando...</div>
-      <br>
-  
-      <button ion-button style="background-color: #dd4b39; width: 45%; opacity: 1;">
-        Gmail
-      </button>
-      <button ion-button float-right style="background-color: #3b5998; width: 45%; opacity: 1;">
-        Facebook
-      </button>
-          
+      </button> 
+      <ion-row class="line">
+        <ion-col col-5><hr style="background:purple"></ion-col>
+        <ion-col col-2 style="text-align:center; color:purple">ou</ion-col>
+        <ion-col col-5><hr style="background:purple"></ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-6>
+          <button ion-button block style="background-color: #dd4b39; opacity: 1;">
+            Gmail
+          </button>
+        </ion-col>
+        <ion-col col-6>
+          <button ion-button full style="background-color: #3b5998; opacity: 1;">
+            Facebook
+          </button>
+        </ion-col>
+      </ion-row>  
     </ion-card-content>
   </ion-card>  
 </ion-content>

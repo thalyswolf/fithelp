@@ -1,12 +1,19 @@
+<ion-header>
+  <ion-row>
+    <ion-col col-3 style="text-align:center;">
+      <button ion-button clear class="btn-nav" icon-only menuToggle><ion-icon name="menu"></ion-icon></button>
+    </ion-col>
+    <ion-col *ngFor="let segment of segments" col-3 style="text-align:center;">
+      <button ion-button clear class="btn-nav" icon-only><ion-icon [name]="segment.icon"></ion-icon></button>
+    </ion-col>
+  </ion-row>
+</ion-header>
 <ion-content parallax style="font-family: 'Rajdhani', sans-serif;">
-<!-- <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">style="font-family: 'Amatic SC', cursive;" -->
   <link href="https://fonts.googleapis.com/css?family=Rajdhani" rel="stylesheet">
   <div class="bg">
-    <img src="/assets/imgs/perfil/batatao.jpg" class="perfil">
     <p class="name-perfil">{{ "Paulo Da Silva" }}</p><br>
-    <p class="name-perfil" style="font-size: 15px; margin-top: -70px;">Descrição do sujeito</p>
   </div> 
-
+ 
   <div class="main-cnt">
     <ion-list>
       <ion-item style="background-color: #f0f0f0; margin-bottom: -10px;">
@@ -35,17 +42,8 @@
         </ion-grid>
       </ion-item>
       <ion-item>
-        <div text-center style="font-size: 40px;">
-          
-        </div>
+
       </ion-item>
     </ion-list>
   </div>
-
-  
-
-  <div style="margin-top: 5%; width: 100%;">
-    
-  </div>
-
 </ion-content>

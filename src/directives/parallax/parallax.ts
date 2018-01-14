@@ -19,7 +19,6 @@ export class ParallaxDirective {
     let cnt=this.el.nativeElement.getElementsByClassName('scroll-content')[0];
     this.header=cnt.getElementsByClassName('bg')[0];
     this.main_cnt=cnt.getElementsByClassName('main-cnt')[0];
-
     this.re.setElementStyle(this.header,'webTransformOrigin','center bottom');
     this.re.setElementStyle(this.header,'background-size','cover');
     this.re.setElementStyle(this.main_cnt,'position','absolute');
@@ -35,6 +34,6 @@ export class ParallaxDirective {
     if(ev.scrollTop>0){
       this.ta=ev.scrollTop/2;
     }
-    this.re.setElementStyle(this.header,'webkitTransform','translate3d(0,'+ this.ta +'px,0) scale(1,1)')
+    this.re.setElementStyle(this.header,'webkitTransform','translate3d(0,'+ this.ta +'px,0) scale(1,1)');
   }
 }

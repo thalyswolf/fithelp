@@ -1,5 +1,5 @@
 page-login {
-    .gradient {
+    .gradient-btn {
         background: linear-gradient(to right,  purple 0%, red 100%);
     }
     .imglogocenter {
@@ -17,5 +17,7 @@ page-login {
         background-size: 100% 100%;
         position: fixed;
     }
-
+    .classic-btn{
+        height:10px;
+    }
 }
