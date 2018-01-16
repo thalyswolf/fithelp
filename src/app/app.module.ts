@@ -19,6 +19,7 @@ import { ConfigsPage } from '../pages/configs/configs';
 import { ParallaxDirective } from '../directives/parallax/parallax'
 import { UserProvider } from '../providers/user/user.service';
 import { HttpModule } from "@angular/http";
+import { HideHeaderDirective } from '../directives/hide-header/hide-header';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { HttpModule } from "@angular/http";
     IndicPage,
     ConfigsPage,
     ParallaxDirective,
-    MenuComponent
+    MenuComponent,
+    HideHeaderDirective
   ],
   imports: [
     BrowserModule,

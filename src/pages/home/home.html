@@ -1,4 +1,5 @@
-<ion-header>
+
+<ion-header #head>
   <ion-row>
     <ion-col col-3 style="text-align:center;">
       <button ion-button clear class="btn-nav" icon-only menuToggle><ion-icon name="menu"></ion-icon></button>
@@ -8,7 +9,8 @@
     </ion-col>
   </ion-row>
 </ion-header>
-<ion-content parallax style="font-family: 'Rajdhani', sans-serif;">
+
+<ion-content parallax hide-header [header]="head" style="font-family: 'Rajdhani', sans-serif;">
   <link href="https://fonts.googleapis.com/css?family=Rajdhani" rel="stylesheet">
   <div class="bg">
     <p class="name-perfil">{{ "Paulo Da Silva" }}</p><br>
