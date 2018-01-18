@@ -20,6 +20,7 @@ import { ParallaxDirective } from '../directives/parallax/parallax'
 import { UserProvider } from '../providers/user/user.service';
 import { HttpModule } from "@angular/http";
 import { HideHeaderDirective } from '../directives/hide-header/hide-header';
+import { BigmenuPage } from '../pages/bigmenu/bigmenu';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { HideHeaderDirective } from '../directives/hide-header/hide-header';
     ConfigsPage,
     ParallaxDirective,
     MenuComponent,
-    HideHeaderDirective
+    HideHeaderDirective,
+    BigmenuPage
   ],
   imports: [
     BrowserModule,
@@ -56,7 +58,8 @@ import { HideHeaderDirective } from '../directives/hide-header/hide-header';
     SearchPage,
     IndicPage,
     ConfigsPage,
-    MenuComponent
+    MenuComponent,
+    BigmenuPage
   ],
   providers: [
     StatusBar,

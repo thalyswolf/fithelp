@@ -1,5 +1,5 @@
 
-<ion-header #head>
+<!-- <ion-header #head>
   <ion-row>
     <ion-col col-3 style="text-align:center;">
       <button ion-button clear class="btn-nav" icon-only menuToggle><ion-icon name="menu"></ion-icon></button>
@@ -8,9 +8,9 @@
       <button ion-button clear class="btn-nav" icon-only><ion-icon [name]="segment.icon"></ion-icon></button>
     </ion-col>
   </ion-row>
-</ion-header>
+</ion-header> hide-header [header]="head" -->
 
-<ion-content parallax hide-header [header]="head" style="font-family: 'Rajdhani', sans-serif;">
+<ion-content parallax style="font-family: 'Rajdhani', sans-serif;">
   <link href="https://fonts.googleapis.com/css?family=Rajdhani" rel="stylesheet">
   <div class="bg">
     <p class="name-perfil">{{ "Paulo Da Silva" }}</p><br>
@@ -23,7 +23,7 @@
           <ion-row>
             <ion-col col-2>
               <div>
-                <button ion-button clear float-left style="font-size: 25px; color: black; margin-left: -10px;">
+                <button ion-button clear float-left style="font-size: 25px; color: black; margin-left: -10px;" (click)="onBigmenu()">
                   <ion-icon name="arrow-dropleft"></ion-icon>
                 </button>
               </div>

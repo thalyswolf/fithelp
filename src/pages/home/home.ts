@@ -1,6 +1,7 @@
 import { UserModel } from './../../models/user.model';
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import { BigmenuPage } from '../bigmenu/bigmenu';
 
 
 @Component({
@@ -20,7 +21,7 @@ export class HomePage {
     nav:''
   }];
   constructor(public navCtrl: NavController,
-              // private nacParams:NavParams
+              private nacParams:NavParams
               ) {
     // this.user = this.nacParams.get('user');
   }
@@ -29,5 +30,9 @@ export class HomePage {
   // //se retornar false ele não permite que entre na page
   //   return true;
   // }
+  onBigmenu():void{
+    this.navCtrl.push(BigmenuPage,{
+    });
+  }
   
 }
