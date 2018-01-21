@@ -10,4 +10,9 @@ page-bigmenu {
         background: linear-gradient(to right,  purple 0%, red 100%);
         font-size: 25px;
     }
+    .backgbigmenu {
+        background-image: url("../assets/imgs/backgbigmenu.png");
+        background-repeat: no-repeat;
+        background-size: auto;
+    }
 }
