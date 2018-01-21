@@ -1,0 +1,12 @@
+<ion-list>
+  <ion-item *ngFor="let student of students">
+    <ion-row>
+      <ion-avatar>
+      <img [src]="student.photo" alt="">
+    </ion-avatar>
+    <h1>
+      {{ student.name }}
+    </h1>
+    </ion-row>
+  </ion-item>
+</ion-list>

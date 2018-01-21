@@ -1,3 +1,7 @@
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { StudentsComponent } from './../components/students/students';
+import { ChartsComponent } from './../components/charts/charts';
+import { ScheduleComponent } from './../components/schedule/schedule';
 import { MenuComponent } from './../components/menu/menu';
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
@@ -21,7 +25,8 @@ import { UserProvider } from '../providers/user/user.service';
 import { HttpModule } from "@angular/http";
 import { HideHeaderDirective } from '../directives/hide-header/hide-header';
 import { BigmenuPage } from '../pages/bigmenu/bigmenu';
-import { StudentProvider } from '../providers/student/student';
+import { StudentProvider } from '../providers/student/student.service';
+import { ScheduleProvider } from '../providers/schedule/schedule.service';
 
 @NgModule({
   declarations: [
@@ -31,12 +36,16 @@ import { StudentProvider } from '../providers/student/student';
     ParallaxDirective,
     MenuComponent,
     HideHeaderDirective,
-    BigmenuPage
+    BigmenuPage,
+    ScheduleComponent,
+    ChartsComponent,
+    StudentsComponent
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
-    HttpModule
+    HttpModule,
+    HttpClientModule 
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -51,7 +60,9 @@ import { StudentProvider } from '../providers/student/student';
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     UserProvider,
-    StudentProvider
+    StudentProvider,
+    ScheduleProvider,
+    HttpClient
   ]
 })
 export class AppModule {}
