@@ -1,3 +1,4 @@
+import { UserProvider } from './../../providers/user/user.service';
 import { UserModel } from './../../models/user.model';
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
@@ -9,6 +10,7 @@ import { BigmenuPage } from '../bigmenu/bigmenu';
   templateUrl: 'home.html'
 })
 export class HomePage {
+  header:any;
   //user:UserModel;
   segments:any = [{
     icon:'body',
@@ -20,10 +22,12 @@ export class HomePage {
     icon:'ios-add-outline',
     nav:''
   }];
+  currentUser:UserModel;
   constructor(public navCtrl: NavController,
-              private nacParams:NavParams
+              private navParams:NavParams,
+              public userService:UserProvider
               ) {
-    // this.user = this.nacParams.get('user');
+    this.currentUser = this.navParams.get('user');
   }
   //vou criar um método na API pra verificar se o usuário tá logado, ai quando implementar tu usar dentro desse método
   // ionViewCanEnter():boolean{
@@ -33,6 +37,9 @@ export class HomePage {
   onBigmenu():void{
     this.navCtrl.push(BigmenuPage,{
     });
+  }
+  ionViewDidLoad(){
+
   }
   
 }

@@ -1,3 +1,4 @@
+import { UserModel } from './../../models/user.model';
 
 import { Injectable } from '@angular/core';
 import { Http, Headers, RequestOptions } from '@angular/http';
@@ -11,7 +12,7 @@ import 'rxjs/add/operator/toPromise';
 */
 @Injectable()
 export class UserProvider {
-
+  currentUser:UserModel;
   constructor(public http: Http) {
     console.log('Hello UserProvider Provider');
   }
@@ -27,14 +28,15 @@ export class UserProvider {
 	      "password":password
       }, options)
       .toPromise()
-      .then((response) =>{    
+      .then((response) =>{   
+        this.currentUser = response.json();
         resolve(response.json());
     })
-    .catch((error) =>{
+     .catch((error) =>{
       console.error('API Error : ', error.status);
       console.error('API Error : ', JSON.stringify(error));
       reject(error.json());
+      });
     });
-  });
   }
 }
