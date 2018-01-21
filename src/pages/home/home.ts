@@ -27,7 +27,13 @@ export class HomePage {
               private navParams:NavParams,
               public userService:UserProvider
               ) {
-    this.currentUser = this.navParams.get('user');
+    this.currentUser = {
+      id:'123',
+      name:'Ericksão',
+      account:1,
+      email:'asdasd',
+      password:'123'
+    };//this.navParams.get('user');
   }
   //vou criar um método na API pra verificar se o usuário tá logado, ai quando implementar tu usar dentro desse método
   // ionViewCanEnter():boolean{
