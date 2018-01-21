@@ -21,6 +21,7 @@ import { UserProvider } from '../providers/user/user.service';
 import { HttpModule } from "@angular/http";
 import { HideHeaderDirective } from '../directives/hide-header/hide-header';
 import { BigmenuPage } from '../pages/bigmenu/bigmenu';
+import { StudentProvider } from '../providers/student/student';
 
 @NgModule({
   declarations: [
@@ -65,7 +66,8 @@ import { BigmenuPage } from '../pages/bigmenu/bigmenu';
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    UserProvider
+    UserProvider,
+    StudentProvider
   ]
 })
 export class AppModule {}

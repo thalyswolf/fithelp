@@ -17,38 +17,38 @@ import { LoginPage } from '../pages/login/login';
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage:any = HomePage;
+  rootPage:any = LoginPage;
   @ViewChild(Nav) nav:Nav;
   pages:[{title:string, component:any, icon:string}];
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     this.pages=[{
       title:'Ficha',
-      component:FichaPage,
+      component:'FichaPage',
       icon:'md-list-box'
     },
     {
       title:'GraphsPage',
-      component:GraphsPage,
+      component:'GraphsPage',
       icon:'md-list-box'
     },
     {
       title:'NotificPage',
-      component:NotificPage,
+      component:'NotificPage',
       icon:'md-list-box'
     },
     {
       title:'SearchPage',
-      component:SearchPage,
+      component:'SearchPage',
       icon:'md-list-box'
     },
     {
       title:'IndicPage',
-      component:IndicPage,
+      component:'IndicPage',
       icon:'md-list-box'
     },
     {
       title:'ConfigsPage',
-      component:ConfigsPage,
+      component:'ConfigsPage',
       icon:'md-list-box'
     }]
     platform.ready().then(() => {
