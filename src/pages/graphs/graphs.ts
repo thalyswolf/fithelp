@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { HomePage } from '../home/home';
 
 /**
  * Generated class for the GraphsPage page.
@@ -20,6 +21,11 @@ export class GraphsPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad GraphsPage');
+  }
+
+  onHome():void{
+    this.navCtrl.push(HomePage,{
+    });
   }
 
 }

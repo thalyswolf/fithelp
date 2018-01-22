@@ -24,7 +24,6 @@ import { ParallaxDirective } from '../directives/parallax/parallax'
 import { UserProvider } from '../providers/user/user.service';
 import { HttpModule } from "@angular/http";
 import { HideHeaderDirective } from '../directives/hide-header/hide-header';
-import { BigmenuPage } from '../pages/bigmenu/bigmenu';
 import { StudentProvider } from '../providers/student/student.service';
 import { ScheduleProvider } from '../providers/schedule/schedule.service';
 
@@ -36,7 +35,6 @@ import { ScheduleProvider } from '../providers/schedule/schedule.service';
     ParallaxDirective,
     MenuComponent,
     HideHeaderDirective,
-    BigmenuPage,
     ScheduleComponent,
     ChartsComponent,
     StudentsComponent
@@ -52,8 +50,7 @@ import { ScheduleProvider } from '../providers/schedule/schedule.service';
     MyApp,
     HomePage,
     LoginPage,
-    MenuComponent,
-    BigmenuPage
+    MenuComponent
   ],
   providers: [
     StatusBar,

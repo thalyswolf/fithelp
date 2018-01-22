@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { HomePage } from '../home/home';
 
 /**
  * Generated class for the IndicPage page.
@@ -20,6 +21,11 @@ export class IndicPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad IndicPage');
+  }
+
+  onHome():void{
+    this.navCtrl.push(HomePage,{
+    });
   }
 
 }

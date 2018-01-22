@@ -40,12 +40,12 @@ export class LoginPage {
   }
 
   onCadastro():void{
-    this.navCtrl.push(CadastroPage,{
+    this.navCtrl.push('CadastroPage',{
     });
   }
   
   onNewpass():void{
-    this.navCtrl.push(NewpassPage,{
+    this.navCtrl.push('NewpassPage',{
     });
   }
   onLogin(){

@@ -2,7 +2,6 @@ import { UserProvider } from './../../providers/user/user.service';
 import { UserModel } from './../../models/user.model';
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-import { BigmenuPage } from '../bigmenu/bigmenu';
 import { StudentProvider } from "../../providers/student/student.service";
 
 
@@ -38,10 +37,6 @@ export class HomePage {
   // //se retornar false ele não permite que entre na page
   //   return true;
   // }
-  onBigmenu():void{
-    this.navCtrl.push(BigmenuPage,{
-    });
-  }
   ionViewDidLoad(){
 
   }

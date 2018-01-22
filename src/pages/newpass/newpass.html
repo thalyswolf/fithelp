@@ -1,27 +1,41 @@
-<ion-content padding class="backgnd">
-<link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
-    
+<link href="https://fonts.googleapis.com/css?family=Rajdhani" rel="stylesheet">
+<ion-header class="gradient" style="font-family: 'Rajdhani', sans-serif; height: 60px;">
+  <ion-grid>
+    <ion-row>
+      <ion-col col-2>
+        <button ion-button icon-only clear style="color:white; margin-top: -5px;" (click)="onLogin();">
+          <ion-icon ios="ios-arrow-round-back" md="md-arrow-round-back"></ion-icon>
+        </button>
+      </ion-col>
+      <ion-col col-10>
+        <p style="color:white; margin-top: 4px;">RECUPERAR SENHA</p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-header>
 
-  <ion-card class="center" style="opacity: 0.7">
-    <ion-card-content>
-      <div style="font-family: 'Amatic SC', cursive; text-align: center; font-size: 40px;">Recuperar Senha</div>
-      <ion-list>
-        <ion-item>
-          <ion-label floating>Usuário ou email</ion-label>
-          <ion-input type="text"></ion-input>
-        </ion-item>
-      </ion-list>
+<ion-content padding class="backgnd" style="font-family: 'Rajdhani', sans-serif;">
   
+  <ion-card class="center">
+    <ion-card-content>
+      <ion-grid>
+        <ion-list>
+          <ion-row>
+            <ion-item>
+              <ion-label floating>Usuário ou email</ion-label>
+              <ion-input type="text"></ion-input>
+            </ion-item>
+          </ion-row>
+        </ion-list>
+      </ion-grid>
       <br>
-      <button ion-button block class="gradient" (click)="onHome()">
+      <button ion-button block class="gradient" (click)="onHome()" style="height: 40px;">
         Enviar email
       </button>
-  
-      <div text-center>Um email será enviado com os procedimentos que deverão ser realizados 
+      <br>
+      <div text-justify style="font-size:18px;">Um email será enviado com os procedimentos que deverão ser realizados 
         para recuperar a sua senha. Caso não se lembre do usuário ou do email, entre em contato 
         com a nossa equipe.</div>
-      <a (click)="onLogin()">Voltar</a>
     </ion-card-content>
-  </ion-card>  
-
+  </ion-card>
 </ion-content>
