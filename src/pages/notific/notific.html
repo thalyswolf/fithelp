@@ -15,8 +15,56 @@
   </ion-grid>
 </ion-header>
 
-<ion-content style="font-family: 'Rajdhani', sans-serif;">
+<ion-content style="font-family: 'Rajdhani', sans-serif;" class="backgnd">
 
-  
+  <ion-card>
+    <ion-card-header>
+      <p style="font-size: 20px;">Configurar notificação</p>
+    </ion-card-header>
+    <ion-card-content #class>
+      <ion-grid>
+        <ion-list>
+          <ion-row>
+            <ion-item>
+              <ion-label floating>Título</ion-label>
+              <ion-input type="text"></ion-input>
+            </ion-item>
+          </ion-row>
+        </ion-list>
+      </ion-grid>
+      <br>
+
+      <p style="font-size:16px;" text-center>Dias</p>
+      <ion-grid>
+        <ion-row text-center>
+          <button ion-button outline class="btn-days">S</button>
+          <button ion-button outline class="btn-days">T</button>
+          <button ion-button outline class="btn-days">Q</button>
+          <button ion-button outline class="btn-days">Q</button>
+          <button ion-button outline class="btn-days">S</button> 
+          <button ion-button outline class="btn-days">S</button>
+          <button ion-button outline class="btn-days">D</button>
+        </ion-row> 
+      </ion-grid>
+      <br>
+
+      <p style="font-size:16px;" text-center>Hora</p>
+
+      <ion-grid>
+        <ion-list>
+          <ion-row>
+            <ion-item>
+              <ion-label>Hora</ion-label>
+              <ion-datetime displayFormat="HH:mm" [(ngModel)]="myDate" cancelText="Cancelar" okText="Pronto!"></ion-datetime>
+            </ion-item>
+          </ion-row>
+        </ion-list>
+      </ion-grid>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card class="gradient-btn" (click)="someFunction()">
+    <p style="font-size: 20px; color: black; padding:5px;" text-center>Nova notificação</p>
+  </ion-card>
 
 </ion-content>
