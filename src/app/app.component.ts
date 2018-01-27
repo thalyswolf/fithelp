@@ -17,7 +17,7 @@ import { LoginPage } from '../pages/login/login';
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage:any = HomePage;
+  rootPage:any = LoginPage;
   @ViewChild(Nav) nav:Nav;
   pages:[{title:string, component:any, icon:string}];
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {

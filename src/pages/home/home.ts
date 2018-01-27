@@ -21,15 +21,15 @@ export class HomePage {
               public userService:UserProvider,
               public studentService:StudentProvider
               ) {
-    //this.currentUser = this.navParams.get('user');
+    this.currentUser = this.navParams.get('user');
     this.student = this.studentService.students;
-    this.currentUser = {
-      id:'123',
-      name:'Ericksão',
-      account:1,
-      email:'thalys@',
-      password:'123'
-    }
+    // this.currentUser = {
+    //   id:'123',
+    //   name:'Ericksão',
+    //   account:1,
+    //   email:'thalys@',
+    //   password:'123'
+    // }
     }//this.navParams.get('user');
 
   //vou criar um método na API pra verificar se o usuário tá logado, ai quando implementar tu usar dentro desse método
