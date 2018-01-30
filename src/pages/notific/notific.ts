@@ -1,6 +1,6 @@
+import { NotificModel } from './../../models/notific.model';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { HomePage } from '../home/home';
 
 /**
  * Generated class for the NotificPage page.
@@ -15,35 +15,24 @@ import { HomePage } from '../home/home';
   templateUrl: 'notific.html',
 })
 export class NotificPage {
-  title:string="";
-  ver:boolean=true;
-  notifications:any = [{
-    title:"teste",
-    day:"seg",
-    hour:"12:20",
-    visible:false
+  
+  notifications:NotificModel[] =[{
+    id:'Teste1',
+    title:'Teste1',
+    date:'43',
+    time:"24"
+  },
+  {
+    id:'Teste2',
+    title:'Teste1',
+    date:'43',
+    time:"24"
   }];
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
-  showCont(v:boolean) {
-    this.ver = !this.ver;
-  }
-
   ionViewDidLoad() {
     console.log('ionViewDidLoad NotificPage');
-  }
-  newNotif(){
-    this.notifications.push({
-      title:"ericksao",
-      day:"seg",
-      hour:"12:20",
-      visible:false
-    })
-  }
-  onHome():void{
-    this.navCtrl.push(HomePage,{
-    });
   }
 
 }

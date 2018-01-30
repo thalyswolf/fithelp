@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { HomePage } from './../../pages/home/home';
+import { NotificModel } from './../../models/notific.model';
+import { Component, Input } from '@angular/core';
 
 /**
  * Generated class for the NotificationComponent component.
@@ -13,10 +15,24 @@ import { Component } from '@angular/core';
 export class NotificationComponent {
 
   text: string;
-
+  @Input('notific') notifications:NotificModel[];
   constructor() {
     console.log('Hello NotificationComponent Component');
     this.text = 'Hello World';
   }
 
+  showCont(v:boolean) {
+    this.ver = !this.ver;
+  }
+
+  ionViewDidLoad() {
+    console.log('ionViewDidLoad NotificPage');
+  }
+  newNotif(){
+    
+  }
+  onHome():void{
+    this.navCtrl.push(HomePage,{
+    });
+  }
 }

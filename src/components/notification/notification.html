@@ -1,4 +1,47 @@
-<!-- Generated template for the NotificationComponent component -->
-<div>
-
-</div>
+ <div *ngFor="let notification of notifications">
+    <ion-card>
+      <ion-card-header (click)="showCont(notification.visible);">
+        <p style="font-size: 20px;">{{ notification.title }}</p>
+      </ion-card-header>
+      <ion-card-content #class [hidden]="ver">
+        <ion-grid>
+          <ion-list>
+            <ion-row>
+              <ion-item>
+                <ion-label floating>Título</ion-label>
+                <ion-input type="text" [(ngModel)]="title"></ion-input>
+              </ion-item>
+            </ion-row>
+          </ion-list>
+        </ion-grid>
+        <br>
+        <p style="font-size:16px;" text-center>Dias</p>
+        <ion-grid>
+          <ion-row text-center>
+            <button ion-button outline class="btn-days">S</button>
+            <button ion-button outline class="btn-days">T</button>
+            <button ion-button outline class="btn-days">Q</button>
+            <button ion-button outline class="btn-days">Q</button>
+            <button ion-button outline class="btn-days">S</button> 
+            <button ion-button outline class="btn-days">S</button>
+            <button ion-button outline class="btn-days">D</button>
+          </ion-row> 
+        </ion-grid>
+        <br>
+        <p style="font-size:16px;" text-center>Hora</p>
+        <ion-grid>
+          <ion-list>
+            <ion-row>
+              <ion-item>
+                <ion-label>Hora</ion-label>
+                <ion-datetime displayFormat="HH:mm" [(ngModel)]="myDate" cancelText="Cancelar" okText="Pronto!"></ion-datetime>
+              </ion-item>
+            </ion-row>
+          </ion-list>
+        </ion-grid>
+      </ion-card-content>
+    </ion-card>
+  </div>
+  <ion-card class="gradient-btn" (click)="newNotif();">
+    <p style="font-size: 20px; color: black; padding:5px;" text-center>Nova notificação</p>
+  </ion-card>

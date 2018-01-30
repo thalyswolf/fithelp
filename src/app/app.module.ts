@@ -1,4 +1,5 @@
 import { NotificationComponent } from './../components/notification/notification';
+
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { StudentsComponent } from './../components/students/students';
 import { ChartsComponent } from './../components/charts/charts';
@@ -31,7 +32,7 @@ import { ScheduleProvider } from '../providers/schedule/schedule.service';
     ScheduleComponent,
     ChartsComponent,
     StudentsComponent,
-    NotificationComponent
+    
   ],
   imports: [
     BrowserModule,
@@ -44,8 +45,7 @@ import { ScheduleProvider } from '../providers/schedule/schedule.service';
     MyApp,
     HomePage,
     LoginPage,
-    MenuComponent,
-    NotificationComponent
+    MenuComponent
   ],
   providers: [
     StatusBar,
