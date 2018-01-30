@@ -21,7 +21,7 @@ export class HomePage {
               public userService:UserProvider,
               public studentService:StudentProvider
               ) {
-    this.currentUser = this.navParams.get('user');
+    this.currentUser = this.userService.currentUser;
     this.student = this.studentService.students;
     // this.currentUser = {
     //   id:'123',

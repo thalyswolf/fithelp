@@ -12,8 +12,8 @@ import { Component } from '@angular/core';
 })
 export class ScheduleComponent {
 
-  text: string;
-
+  text: string="batada";
+  
   constructor() {
     console.log('Hello ScheduleComponent Component');
     this.text = 'Hello World';

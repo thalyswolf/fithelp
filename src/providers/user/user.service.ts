@@ -28,8 +28,9 @@ export class UserProvider {
 	      "password":password
       }, options)
       .toPromise()
-      .then((response) =>{   
-        this.currentUser = response.json();
+      .then((response) =>{
+        let user = response.json();   
+        this.currentUser = user.data;
         resolve(response.json());
     })
      .catch((error) =>{

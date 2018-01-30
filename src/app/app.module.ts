@@ -1,3 +1,4 @@
+import { NotificationComponent } from './../components/notification/notification';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { StudentsComponent } from './../components/students/students';
 import { ChartsComponent } from './../components/charts/charts';
@@ -11,15 +12,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
-import { CadastroPage } from '../pages/cadastro/cadastro';
 import { LoginPage } from '../pages/login/login';
-import { NewpassPage } from '../pages/newpass/newpass';
-import { FichaPage } from '../pages/ficha/ficha';
-import { GraphsPage } from '../pages/graphs/graphs';
-import { NotificPage } from '../pages/notific/notific';
-import { SearchPage } from '../pages/search/search';
-import { IndicPage } from '../pages/indic/indic';
-import { ConfigsPage } from '../pages/configs/configs';
 import { ParallaxDirective } from '../directives/parallax/parallax'
 import { UserProvider } from '../providers/user/user.service';
 import { HttpModule } from "@angular/http";
@@ -37,7 +30,8 @@ import { ScheduleProvider } from '../providers/schedule/schedule.service';
     HideHeaderDirective,
     ScheduleComponent,
     ChartsComponent,
-    StudentsComponent
+    StudentsComponent,
+    NotificationComponent
   ],
   imports: [
     BrowserModule,
@@ -50,7 +44,8 @@ import { ScheduleProvider } from '../providers/schedule/schedule.service';
     MyApp,
     HomePage,
     LoginPage,
-    MenuComponent
+    MenuComponent,
+    NotificationComponent
   ],
   providers: [
     StatusBar,

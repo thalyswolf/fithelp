@@ -23,7 +23,7 @@
         </ion-list>
       </ion-grid>
       <br>
-      <button ion-button block class="gradient-btn" (click)="onLogin()">
+      <button ion-button block class="gradient-btn" (keyup.enter)="onLogin()" (click)="onLogin()">
         Entrar
       </button>
       <div text-center>Esqueceu suas credenciais? <a (click)="onNewpass()">Clique aqui!</a></div>
