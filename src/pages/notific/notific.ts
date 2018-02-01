@@ -32,7 +32,7 @@ export class NotificPage {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad NotificPage');
+    //console.log('ionViewDidLoad NotificPage');
   }
 
 }

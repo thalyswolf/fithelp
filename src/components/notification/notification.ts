@@ -15,8 +15,10 @@ import { Component, Input } from '@angular/core';
 export class NotificationComponent {
 
   text: string;
+  ver;
   @Input('notific') notifications:NotificModel[];
   constructor() {
+
     console.log('Hello NotificationComponent Component');
     this.text = 'Hello World';
   }
@@ -25,7 +27,7 @@ export class NotificationComponent {
     this.ver = !this.ver;
   }
 
-  ionViewDidLoad() {
+  ionViewDidLoad() { 
     console.log('ionViewDidLoad NotificPage');
   }
   newNotif(){
