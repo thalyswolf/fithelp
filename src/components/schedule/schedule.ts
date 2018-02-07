@@ -11,12 +11,8 @@ import { Component } from '@angular/core';
   templateUrl: 'schedule.html'
 })
 export class ScheduleComponent {
-
-  text: string="batada";
   
   constructor() {
-    console.log('Hello ScheduleComponent Component');
-    this.text = 'Hello World';
   }
 
 }
